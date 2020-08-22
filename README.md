@@ -75,18 +75,18 @@ Below I give a list of some specific rules in writing the main text of an academ
 
 ## Reference list
 
-First, the reference style differs among journals. Read their instructions carefully. In LaTeX, there are [two main ways to manage the reference list](https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex): BibTeX and non-BibTeX. I strongly recommend the former. Wtih BibTeX, simply write these two lines at the end of the paper (but before `\end{document}`):
+The reference style differs greatly among journals. Read their instructions carefully. In LaTeX, there are [two main ways to manage the reference list](https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex): BibTeX and non-BibTeX. I strongly recommend the former. With BibTeX, simply write these two lines at the end of the paper (but before `\end{document}`):
 
 - `\bibliographystyle{unsrt}`
 - `\bibliography{ref}`
 
 which would require two files: `unsrt.bst` and `ref.bib`. Most likely the first file is provided by the journal. In practice, however, Overleaf can retrieve a lot of `.bst` files from its server, so you may only need to provide the file `ref.bib`.
 
-Double check the typos in the reference list as if it were the main text. Pay attention to these 
+Double check the reference list for typos as if it were the main text. Pay attention to these :
 
 - Write `$\left<110\right>$` and `\{110\}` instead of `<110>` and `{110}`.
-- Write `dislocations in Mo` and `dilute Mg-based alloys` instead of `dislocations in mo` and `dilute mg-based alloys`. Unfortunately, in the title, most BibTeX style automatically converts all uppercase letters to lowercase ones, except the very first letter. To enforce the usage of uppercase letters, add curly brakets around the the words/letters in your `.bib` file, e.g., `dislocations in {Mo}`.
+- Write `dislocations in Mo` and `dilute Mg-based alloys` instead of `dislocations in mo` and `dilute mg-based alloys`. Unfortunately, in the article title, most BibTeX style automatically converts all uppercase letters to lowercase ones, except the very first letter. To enforce the usage of uppercase letters, add curly brakets around certain words/letters in your `.bib` file, e.g., `dislocations in {Mo}` or `dislocations in {M}o`.
 - Use special letter(s) in authors' names, if any.
 - When necessary, use math mode, e.g., `($\bar{1}10$)` instead of `(-110)`.
-- In most cases, use abbreviated jouranl names, e.g., `Acta Mater.` instead of full journal names, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.`  
+- In most cases, use abbreviated jouranl names, e.g., `Acta Mater.` instead of the full journal name, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.`  
 
