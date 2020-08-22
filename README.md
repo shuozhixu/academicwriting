@@ -15,7 +15,9 @@ If you are a beginner of LaTeX, these references may be helpful:
 
 # Structure of a paper
 
-A scientific paper consists of five main parts: Introduction, Methods, Results, Discussion, and Conclusion. I usually write in that order. But some people write Methods, Results, Discussion first, before finishing Introduction and Conclusion. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice.
+A scientific paper consists of five main parts: Introduction, Methods, Results, Discussion, and Conclusion. I usually write in that order, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction and Conclusion. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice.
+
+
 
 There are already many good references on this topic, e.g.,
 
@@ -28,7 +30,7 @@ There are already many good references on this topic, e.g.,
 
 # Writing style
 
-The writing style varies greatly depending on the journal you want to submit your manuscrip to. Read the instructions carefully. Below are some examples:
+The writing style varies greatly depending on the journal you want to submit your manuscript to. Read their instructions carefully. Below are some examples:
 
 - [Science](https://www.sciencemag.org/authors/science-information-authors)
 - [Nature](https://www.nature.com/nature/for-authors)
