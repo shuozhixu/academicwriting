@@ -65,3 +65,4 @@ Below I give a list of some specific rules in writing an academic paper using La
 	- write `MD` throughout the paper, without spelling out `molecular dynamics` at all
 - For [dash](https://en.wikipedia.org/wiki/Dash) in non-math mode, use `-` for an ordinary hyphen, use `--` for an en dash, and use `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes)
 - A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
+- If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., write `Fe` instead of `fe`.
