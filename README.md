@@ -38,7 +38,9 @@ The writing style varies greatly depending on the journal you want to submit you
 
 For general writing style, I highly recommend [this book](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X). Chinese speakers may also be interested in [this book](https://www.amazon.com/English-Exposed-Mistakes-Chinese-Speakers/dp/9888390759).
 
-Below I give a list of some specific rules in writing an academic paper using LaTeX:
+## Main text
+
+Below I give a list of some specific rules in writing the main text of an academic paper using LaTeX:
 
 - Use one, not two, space after a period, [unless you are typing on an acutal typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [APA changed their recommendation](https://apastyle.apa.org/style-grammar-guidelines/punctuation/space-after-period)
 - Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables. For example,
@@ -46,23 +48,45 @@ Below I give a list of some specific rules in writing an academic paper using La
 	- elastic anisotropic index for cubic crystals: _A_<sub>c</sub>. _A_ is italic but the subscript c is not because it stands for cubic
 	- however, if there is a vector _B_, which has three components and you use _a_, _b_, _c_ to denote each component, do italicize them, e.g., _B<sub>c</sub>_
 	- do not italicize units, e.g., write `mJ/m$^2$` or `$\mathrm{mJ/m}^2$`, instead of `$mJ/m^2$`
-- [Always use the Oxford comma](https://www.businessinsider.com/always-use-the-oxford-comma-2015-5)
+- [Always use the Oxford comma](https://www.businessinsider.com/always-use-the-oxford-comma-2015-5).
 - Be aware of [the lack of space after `\AA`](https://tex.stackexchange.com/questions/179625/in-text-mode-space-being-taken-away?noredirect=1&lq=1). A few tips:
 	- write `\AA\` or `\AA{}`
 	- if `\AA` is followed by a period or a comma, do not do anything special, i.e., just write `\AA.` or `\AA,`. If you use a backslash in front of a period or a comma, [it becomes a space](https://texblog.org/2014/04/09/whitespace-in-math-mode)
-- Sometimes a period does not denote the end of a sentence. In this case, we need to use a backslash in front of the period, otherwise the space would be too wide, e.g.,
+- Sometimes a period does not denote the end of a sentence. In this case, we need to use a backslash following the period, otherwise the space would be too wide, e.g.,
 	- `Ref.\ [34]`
 	- `Barack H.\ Obama II`
 	- `Fig.\ [2]`
-- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially
-- Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`
-- Add a space before citing a reference, e.g., `I have a dream \cite{king1963}`
-- To cite multiple references in the same place, use one `\cite`, e.g., write `\cite{king1963,obama2008}` instead of `\cite{king1963}\cite{obama2008}` 
+- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
+- Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
+- Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
+- Add a space between the number and the unit, e.g., `10 nm` instead of `10nm`.
+- Use [the correct units](https://www.nist.gov/pml/weights-and-measures/metric-si/si-units), e.g., 100 kelvin is written as `100 K` instead of `100 k`.
+- To cite multiple references in the same place, use one `\cite`, e.g., write `\cite{king1963,obama2008}` instead of `\cite{king1963}\cite{obama2008}`. 
 - When using an acronym, spell out the entire phrase once and once only and only when the phrase is used for the first time. Common mistakes include
 	- write `molecular dynamics (MD)` on page 1, then write `molecular dynamics` on page 2
 	- write `molecular dynamics (MD)` on page 1, then write `molecular dynamics (MD)` again on page 2
 	- write `molecular dynamics` on page 1, then write `molecular dynamics (MD)` on page 2
 	- write `MD` throughout the paper, without spelling out `molecular dynamics` at all
-- For [dash](https://en.wikipedia.org/wiki/Dash) in non-math mode, use `-` for an ordinary hyphen, use `--` for an en dash, and use `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes)
+- For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
 - A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
 - If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., write `Fe` instead of `fe`.
+- To create angular brackets in math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which yields less-than and greater-than signs. Note: `<` and `>` only works in math mode.
+- Pay attention to the special letter(s) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`. See [this page](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) for special characters in LaTeX.
+
+## Reference list
+
+First, the reference style differs among journals. Read their instructions carefully. In LaTeX, there are [two main ways to manage the reference list](https://www.overleaf.com/learn/latex/bibliography_management_with_bibtex): BibTeX and non-BibTeX. I strongly recommend the former. Wtih BibTeX, simply write these two lines at the end of the paper (but before `\end{document}`):
+
+- `\bibliographystyle{unsrt}`
+- `\bibliography{ref}`
+
+which would require two files: `unsrt.bst` and `ref.bib`. Most likely the first file is provided by the journal. In practice, however, Overleaf can retrieve a lot of `.bst` files from its server, so you may only need to provide the file `ref.bib`.
+
+Double check the typos in the reference list as if it were the main text. Pay attention to these 
+
+- Write `$\left<110\right>$` and `\{110\}` instead of `<110>` and `{110}`.
+- Write `dislocations in Mo` and `dilute Mg-based alloys` instead of `dislocations in mo` and `dilute mg-based alloys`. Unfortunately, in the title, most BibTeX style automatically converts all uppercase letters to lowercase ones, except the very first letter. To enforce the usage of uppercase letters, add curly brakets around the the words/letters in your `.bib` file, e.g., `dislocations in {Mo}`.
+- Use special letter(s) in authors' names, if any.
+- When necessary, use math mode, e.g., `($\bar{1}10$)` instead of `(-110)`.
+- In most cases, use abbreviated jouranl names, e.g., `Acta Mater.` instead of full journal names, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.`  
+
