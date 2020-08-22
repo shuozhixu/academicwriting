@@ -17,8 +17,6 @@ If you are a beginner of LaTeX, these references may be helpful:
 
 A scientific paper consists of five main parts: Introduction, Methods, Results, Discussion, and Conclusion. I usually write in that order, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction and Conclusion. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice.
 
-
-
 There are already many good references on this topic, e.g.,
 
 - [The art of writing science](https://doi.org/10.1002/pro.514)
@@ -53,7 +51,7 @@ Below I give a list of some specific rules in writing the main text of an academ
 - [Always use the Oxford comma](https://www.businessinsider.com/always-use-the-oxford-comma-2015-5).
 - Be aware of [the lack of space after `\AA`](https://tex.stackexchange.com/questions/179625/in-text-mode-space-being-taken-away?noredirect=1&lq=1). A few tips:
 	- write `\AA\` or `\AA{}`
-	- if `\AA` is followed by a period or a comma, do not do anything special, i.e., just write `\AA.` or `\AA,`. If you use a backslash in front of a period or a comma, [it becomes a space](https://texblog.org/2014/04/09/whitespace-in-math-mode)
+	- if `\AA` is followed by a period or a comma, simply write `\AA.` or `\AA,`. If you use a backslash in front of a period or a comma, [it becomes a space](https://texblog.org/2014/04/09/whitespace-in-math-mode)
 - Sometimes a period does not denote the end of a sentence. In this case, we need to use a backslash following the period, otherwise the space would be too wide, e.g.,
 	- `Ref.\ [34]`
 	- `Barack H.\ Obama II`
