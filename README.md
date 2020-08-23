@@ -13,11 +13,27 @@ If you are a beginner of LaTeX, these references may be helpful:
 - [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 - [The Not So Short Introduction to LaTeX 2&epsilon;](http://ctan.math.washington.edu/tex-archive/info/lshort/english/lshort-letter.pdf)
 
-# Structure of a paper
+# Selecting a journal
 
-A scientific paper consists of five main parts: Introduction, Methods, Results, Discussion, and Conclusion. I usually write in that order, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction and Conclusion. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice.
+There are two main types of scientific papers: full length articles and letters. 
 
-There are already many good references on this topic, e.g.,
+A full length article consists of five main parts, each of which has a heading: Introduction, Methods, Results, Discussion, and Conclusion. However, this is not necessarily the order in which these sections appear in a paper because some journals, e.g., [_npj Computational Materials_](https://www.nature.com/npjcompumats), want you to put the Methods section at the end. Letters usually do not have any heading, but the structure is largely the same. Some letters, e.g., [_Nature_](https://www.nature.com/nature/for-authors/formatting-guide), want you to have a section with heading Methods at the end of the text.
+
+Some journals publish full length article only, some letters only, some both. To find out more about a jouranl, read the recently published work in it. Also read their instructions carefully. Below are some examples:
+
+- [_Science_](https://www.sciencemag.org/authors/science-information-authors)
+- [_Nature_](https://www.nature.com/nature/for-authors)
+- [_PNAS_](https://www.pnas.org/authors/submitting-your-manuscript)
+- [_Acat Materialia_](https://www.elsevier.com/journals/acta-materialia/1359-6454/guide-for-authors)
+- [_JMPS_](https://www.elsevier.com/journals/journal-of-the-mechanics-and-physics-of-solids/0022-5096/guide-for-authors)
+
+Once you select a journal, start writing. When I write a paper, I start with Introduction and end with Conclusion, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction, Conclusion, and Abstract. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice. 
+
+# Writing style
+
+The writing style varies greatly depending on the journal you want to submit your manuscript to. For general writing style, I highly recommend [this book](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X). Chinese speakers may also be interested in [this book](https://www.amazon.com/English-Exposed-Mistakes-Chinese-Speakers/dp/9888390759).
+
+There are also many good references on this topic, e.g.,
 
 - [The art of writing science](https://doi.org/10.1002/pro.514)
 - [How to write a first-class paper](https://doi.org/10.1038/d41586-018-02404-4)
@@ -26,19 +42,14 @@ There are already many good references on this topic, e.g.,
 - [How to write a compelling (materials) science paper](https://doi.org/10.1016/j.mtla.2019.100339)
 - [How to Write and Publish a Scientific Paper](https://www.amazon.com/How-Write-Publish-Scientific-Paper-dp-1316640434/dp/1316640434/ref=dp_ob_title_bk) - this is a book
 
-# Writing style
-
-The writing style varies greatly depending on the journal you want to submit your manuscript to. Read their instructions carefully. Below are some examples:
-
-- [Science](https://www.sciencemag.org/authors/science-information-authors)
-- [Nature](https://www.nature.com/nature/for-authors)
-- [PNAS](https://www.pnas.org/authors/submitting-your-manuscript)
-- [Acat Materialia](https://www.elsevier.com/journals/acta-materialia/1359-6454/guide-for-authors)
-- [JMPS](https://www.elsevier.com/journals/journal-of-the-mechanics-and-physics-of-solids/0022-5096/guide-for-authors)
-
-For general writing style, I highly recommend [this book](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X). Chinese speakers may also be interested in [this book](https://www.amazon.com/English-Exposed-Mistakes-Chinese-Speakers/dp/9888390759).
-
 ## Main text
+
+First, avoid plagiarism, even the words come from prior published work by the same authors. Here are some useful resources:
+
+- [What is plagiarism?](http://studentconduct.sa.ucsb.edu/academic-integrity)
+- [Eight most common types of plagiarism](https://www.enago.com/academy/fraud-research-many-types-plagiarism)
+- [Elsevier Publication Ethics Q&A](https://www.elsevier.com/editors/perk/questions-and-answers)
+- [UCSB Academic Integrity](http://studentconduct.sa.ucsb.edu/academic-integrity)
 
 Below I give a list of some specific rules in writing the main text of an academic paper using LaTeX:
 
@@ -77,6 +88,12 @@ Below I give a list of some specific rules in writing the main text of an academ
 	- With the numberic style, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` becomes <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
 
 	- With the author-year style, add the citation at the end of the sentence too, e.g., `I have a dream \citep{king1963}` which would render `I have a dream (King, 1963)`. Do not write `I have a dream \cite{king1963}` which would render `I have a dream King (1963)`. However, if the author name is at the beginning of a sentence, write `\cite{king1963} has a dream` which would render `King (1963) has a dream`. Do not write `\citep{king1963} has a dream` which would render `(King, 1963) has a dream`.
+
+## Figures
+
+Say that you are writing a paper A for journal B and you want to use a figure that is modified or taken directly from a paper C in journal D. You should cite paper C and add a few words such as `Reproduced with permission from Ref. [C]`. Refer to the published work or instructions in journal B for the exact words. In addition, obtain the permission from the copyrights holder of that figure, which is mostly like the publisher of journal D, to reuse the figure. Here are [guidelines from Elsevier](https://www.elsevier.com/about/policies/copyright/permissions). Other publishers have their own guidelines.
+
+There may be some scenarios in which you do not need to obtain permission. For example, the image or figure has been substantially modified. In this case, you still need to cite journal D. However, if you use a TEM or SEM image or photo, you need to obtain permission from the copyrights holder even if you add in the caption that the image has been modified.
 
 ## Reference list
 
