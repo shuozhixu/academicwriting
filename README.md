@@ -86,6 +86,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- `Barack H.\ Obama II`
 	- `Fig.\ [2]`
 	- `Wang et al.\ [17]`
+	- `Grant No.\ 123456`
 - For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
