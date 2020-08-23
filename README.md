@@ -123,6 +123,10 @@ The reference style differs greatly among journals. Read their instructions care
 
 which would require two files: `unsrt.bst` and `ref.bib`. Most likely the first file is provided by the journal. In practice, however, Overleaf can retrieve a lot of `.bst` files from its server, so you may only need to provide the file `ref.bib`.
 
+If you want to cite a paper, e.g., [this one](http://dx.doi.org/10.1016/j.actamat.2019.05.030), click on `Export`, then choose `Export citation to BibTeX`. Then you will get a `.bib` file. Open it, copy its content, and add it to your `ref.bib` file. Then in your main text, write `\cite{XU2019160}` to cite it. Do this for all other references to cite all of them.
+
+Alternatively, use [reference management software](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software). I use [Zotero](https://en.wikipedia.org/wiki/Zotero). Go to [its website](https://www.zotero.org/download/) and install Zotero and Zotero Connector. When you read a paper in your browser and want to cite it, [use the Zotero Connector](https://www.zotero.org/support/adding_items_to_zotero) to add the bibliographic information to Zotero, which should be already open. Read [this page](https://www.zotero.org/support/quick_start_guide) for more on Zotero. Then, in Zotero, select entries you want to export, right-click on them, choose `Export Items`, change Format to `BibTeX`, select `Use Journal Abbreviation`, then click on `OK`. The entries will be exported to a local `.bib` file. Again, open it and copy & add its content to your `ref.bib` file.
+
 Double check the reference list for typos as if it were the main text. Pay attention to these :
 
 - Write `$\left<110\right>$` and `\{110\}` instead of `<110>` and `{110}`.
