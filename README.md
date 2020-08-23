@@ -13,13 +13,17 @@ If you are a beginner of LaTeX, these references may be helpful:
 - [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 - [The Not So Short Introduction to LaTeX 2&epsilon;](http://ctan.math.washington.edu/tex-archive/info/lshort/english/lshort-letter.pdf)
 
-# Selecting a journal
+# Article type and journal selection
 
-There are two main types of scientific papers: full length articles and letters. 
+There are two [main types of academic papers](https://www.springer.com/gp/authors-editors/authorandreviewertutorials/writing-a-journal-manuscript/types-of-journal-articles/10285504): research articles and review articles. The former report original research while the latter provide a summary of research on a certain topic and perspective on where the field is heading. Some journals publish research articles only, some review articles only, some both.
+
+## Research article
+
+Depending on the length, there are two main types of research articles: full length articles and letters. 
 
 A full length article consists of five main parts, each of which has a heading: Introduction, Methods, Results, Discussion, and Conclusion. However, this is not necessarily the order in which these sections appear in a paper because some journals, e.g., [_npj Computational Materials_](https://www.nature.com/npjcompumats), want you to put the Methods section at the end. Letters usually do not have any heading, but the structure is largely the same. Some letters, e.g., [_Nature_](https://www.nature.com/nature/for-authors/formatting-guide), want you to have a section with heading Methods at the end of the text.
 
-Some journals publish full length article only, some letters only, some both. To find out more about a jouranl, read the recently published work in it. Also read their instructions carefully. Below are some examples:
+Some journals publish full length article only, some letters only, some both. In some journals, e.g., [_Physical Review Materials_](https://journals.aps.org/prmaterials/authors), the letter-size paper is called Rapid Communication. To find out more about a jouranl, read the recently published work in it. Also read their instructions carefully. Below are some examples:
 
 - [_Science_](https://www.sciencemag.org/authors/science-information-authors)
 - [_Nature_](https://www.nature.com/nature/for-authors)
@@ -29,9 +33,23 @@ Some journals publish full length article only, some letters only, some both. To
 
 Once you select a journal, start writing. When I write a paper, I start with Introduction and end with Conclusion, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction, Conclusion, and Abstract. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice. 
 
+## Review articles
+
+Writing a review article is different from writing a research article. [This video from Elsevier](https://researcheracademy.elsevier.com/writing-research/technical-writing-skills/editor-guide-writing-review-article) may be useful.
+
+Below is the list of some journals in my field that only publish review articles:
+
+- [_Progress in Materials Science_](https://www.journals.elsevier.com/progress-in-materials-science)
+- [_Annual Review of Materials Research_](https://www.annualreviews.org/journal/matsci) - by invitation only
+- [_Materials Science and Engineering R: Reports_](https://www.journals.elsevier.com/materials-science-and-engineering-r-reports) - by invitation only
+- [_Current Opinion in Solid State & Materials Science_](https://www.journals.elsevier.com/current-opinion-in-solid-state-and-materials-science)
+- [_International Materials Reviews_](https://www.tandfonline.com/toc/yimr20/current)
+- [_Critical Reviews in Solid State and Materials Sciences_](https://www.tandfonline.com/toc/bsms20/current)
+- [_Archives of Computational Methods in Engineering_](https://www.springer.com/journal/11831)
+
 # Writing style
 
-The writing style varies greatly depending on the journal you want to submit your manuscript to. For general writing style, I highly recommend [this book](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X). Chinese speakers may also be interested in [this book](https://www.amazon.com/English-Exposed-Mistakes-Chinese-Speakers/dp/9888390759).
+The writing style varies greatly depending on the type of article you want to write and the journal you want to submit your manuscript to. For general writing style, I highly recommend [this book](https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X). Chinese speakers may also be interested in [this book](https://www.amazon.com/English-Exposed-Mistakes-Chinese-Speakers/dp/9888390759).
 
 There are also many good references on this topic, e.g.,
 
@@ -44,14 +62,14 @@ There are also many good references on this topic, e.g.,
 
 ## Main text
 
-First, avoid plagiarism, including the words that come from prior published work by the same author(s). Here are some useful resources:
+First, avoid plagiarism, including the words that come from prior published work by the same author(s). Pay special attention to the Introduction and Methods sections in your research articles and all sections in your review articles. Here are some useful resources:
 
 - [What is plagiarism?](http://studentconduct.sa.ucsb.edu/academic-integrity)
 - [Eight most common types of plagiarism](https://www.enago.com/academy/fraud-research-many-types-plagiarism)
 - [Elsevier Publication Ethics Q&A](https://www.elsevier.com/editors/perk/questions-and-answers)
 - [UCSB Academic Integrity](http://studentconduct.sa.ucsb.edu/academic-integrity)
 
-Below I give a list of some specific rules in writing the main text of an academic paper using LaTeX:
+Below I give a list of specific rules in writing the main text of an academic paper using LaTeX:
 
 - Use one, not two, space after a period, [unless you are typing on an acutal typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [Microsoft Word changed their mind](https://www.theverge.com/2020/4/24/21234170/microsoft-word-two-spaces-period-error-correction-great-space-debate). In practice, there is no need to type an additional space, because [LaTeX treats multiple, consecutive spaces as if they were a single space](http://www.ctex.org/documents/latex/latex2e-html/ltx-143.html).
 - Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables. For example,
