@@ -33,7 +33,7 @@ Some journals publish full length article only, some letters only, some both. In
 
 Once you select a journal, start writing. When I write a paper, I start with Introduction and end with Conclusion, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction, Conclusion, and Abstract. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice. 
 
-## Review articles
+## Review article
 
 Writing a review article is different from writing a research article. [This video from Elsevier](https://researcheracademy.elsevier.com/writing-research/technical-writing-skills/editor-guide-writing-review-article) may be useful.
 
