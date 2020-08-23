@@ -53,7 +53,7 @@ First, avoid plagiarism, including the words that come from prior published work
 
 Below I give a list of some specific rules in writing the main text of an academic paper using LaTeX:
 
-- Use one, not two, space after a period, [unless you are typing on an acutal typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [APA changed their recommendation](https://apastyle.apa.org/style-grammar-guidelines/punctuation/space-after-period)
+- Use one, not two, space after a period, [unless you are typing on an acutal typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [Microsoft Word changed their mind](https://www.theverge.com/2020/4/24/21234170/microsoft-word-two-spaces-period-error-correction-great-space-debate)
 - Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables. For example,
 	- _x_ axis, _y_ axis, and _z_ axis 
 	- elastic anisotropic index for cubic crystals: _A_<sub>c</sub>. _A_ is italic but the subscript c is not because it stands for cubic
