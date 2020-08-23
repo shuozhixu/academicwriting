@@ -44,7 +44,7 @@ There are also many good references on this topic, e.g.,
 
 ## Main text
 
-First, avoid plagiarism, even the words come from prior published work by the same authors. Here are some useful resources:
+First, avoid plagiarism, including the words that come from prior published work by the same author(s). Here are some useful resources:
 
 - [What is plagiarism?](http://studentconduct.sa.ucsb.edu/academic-integrity)
 - [Eight most common types of plagiarism](https://www.enago.com/academy/fraud-research-many-types-plagiarism)
