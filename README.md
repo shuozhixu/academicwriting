@@ -104,6 +104,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., write `Fe` instead of `fe`.
 - To create angular brackets in math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs. Note: `<` and `>` only works in math mode.
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
+- Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
 - There are two main citation styles: numberic and author-year:
 	- The author-year style will take care of the authors' names automatically, regardless of how many authors there are. But for the numerical style, you need to explicitly write the authors' names, if presenting the names is desirable. Use their last names only. Note that some last names have more than one word, e.g., de Koning, van Gogh, Van der Ven, Van de Walle, and D&#237;az de la Rubia. When there is one author, e.g., King, write `King [34] has a dream`. When there are two authors, e.g., Lewis and Clark, write `Lewis and Clark [44] returned to St. Louis on September 23, 1806`. When there are more than two authors, e.g., Weiss, Barish, and Thorne, write `Weiss et al. [54] won the 2017 Nobel Prize in Physics`.
 	- With the numberic style, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` becomes <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
@@ -111,9 +112,17 @@ Below I give a list of specific rules in writing the main text of an academic pa
 
 ## Figures
 
+Every figure should be accompanied by a caption, which appears below the graphic.
+
 Say that you are writing a paper A for journal B and you want to use a figure that is modified or taken directly from a paper C in journal D. You should cite paper C and add a few words such as `Reproduced with permission from Ref. [C]`. Refer to the published work or instructions in journal B for the exact words. In addition, obtain the permission from the copyrights holder of that figure, which is mostly like the publisher of journal D, to reuse the figure. Here are [guidelines from Elsevier](https://www.elsevier.com/about/policies/copyright/permissions). Other publishers have their own guidelines.
 
 There may be some scenarios in which you do not need to obtain permission. For example, the image or figure has been substantially modified. In this case, you still need to cite journal D. However, if you use a TEM or SEM image or photo, you need to obtain permission from the copyrights holder even if you add in the caption that the image has been modified.
+
+## Tables
+
+Like figures, every table should be accompanied by a caption too. But unlike figures, the caption appears above, not below, the tabulated content.
+
+In most journals, vertical lines are not allowed in a table, neither are most horizontal lines. Again, refer to recent papers in the journal and/or its instruction.
 
 ## Reference list
 
