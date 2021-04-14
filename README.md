@@ -53,6 +53,7 @@ The writing style varies greatly depending on the type of article you want to wr
 
 There are also many good references on this topic, e.g.,
 
+- [Whitesides' Group: Writing a Paper](https://doi.org/10.1002/adma.200400767)
 - [The art of writing science](https://doi.org/10.1002/pro.514)
 - [How to write a first-class paper](https://doi.org/10.1038/d41586-018-02404-4)
 - [Writing a scientific article: A step-by-step guide for beginners](https://doi.org/10.1016/j.eurger.2015.08.005)
