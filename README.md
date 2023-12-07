@@ -6,7 +6,7 @@ Writing a paper for a peer-reviewed scientific journal is not easy. Here, I shar
 
 First, what do we use to write? A text editor. Most people I know use either [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word) or [LaTeX](https://en.wikipedia.org/wiki/LaTeX). I recommend the latter. Similar to that multiple authors can collaborate on a Word document using [Google Docs](https://en.wikipedia.org/wiki/Google_Docs), people can do the same on a LaTeX document using [Overleaf](https://en.wikipedia.org/wiki/Overleaf). There are other LaTeX online services but Overleaf is the one I use. Just go to [its website](https://www.overleaf.com) and create an account.
 
-With Overleaf, you do not need to install any LaTeX-related software on your own computer. But if you want, you can. Follow [this page](https://www.latex-project.org/get).
+With Overleaf, you do not need to install any LaTeX-related software on your own computer. But if you want, you can. Follow [this page](https://www.latex-project.org/get). Also, you may use Overleaf in the [dark mode](https://chromewebstore.google.com/detail/overleaf-dark-mode/ppkjalpibdaiahjefbapemimobpkpond?pli=1).
 
 If you are a beginner of LaTeX, these references may be helpful:
 
