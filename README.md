@@ -4,9 +4,9 @@ Writing a paper for a peer-reviewed scientific journal is not easy. Here, I shar
 
 # Text editor
 
-First, what do we use to write? A text editor. Most people I know use either [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word) or [LaTeX](https://en.wikipedia.org/wiki/LaTeX). I recommend the latter. Similar to that multiple authors can collaborate on a Word document using [Google Docs](https://en.wikipedia.org/wiki/Google_Docs), people can do the same on a LaTeX document using [Overleaf](https://en.wikipedia.org/wiki/Overleaf). There are other LaTeX online services but Overleaf is the one I use. Just go to [its website](https://www.overleaf.com) and create an account.
+First, what do we use to write? A text editor. Most people I know use either [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word) or [LaTeX](https://en.wikipedia.org/wiki/LaTeX). I recommend the latter. Similar to that multiple authors can collaborate on a Word document using [Google Docs](https://en.wikipedia.org/wiki/Google_Docs), people can do the same on a LaTeX document using [Overleaf](https://en.wikipedia.org/wiki/Overleaf). There are other LaTeX online services but Overleaf is the one I use. Just go to [its website](https://www.overleaf.com) and create an account. It supports [dark mode](https://chromewebstore.google.com/detail/overleaf-dark-mode/ppkjalpibdaiahjefbapemimobpkpond?pli=1).
 
-With Overleaf, you do not need to install any LaTeX-related software on your own computer. But if you want, you can. Follow [this page](https://www.latex-project.org/get). Also, you may use Overleaf in the [dark mode](https://chromewebstore.google.com/detail/overleaf-dark-mode/ppkjalpibdaiahjefbapemimobpkpond?pli=1).
+With Overleaf, you do not need to install any LaTeX-related software on your own computer. But if you want, you can. Follow [this page](https://www.latex-project.org/get).
 
 If you are a beginner of LaTeX, these references may be helpful:
 
@@ -39,11 +39,13 @@ Writing a review article is different from writing a research article. [This vid
 
 Below is the list of some journals in my field that only publish review articles:
 
+- [_Nature Review Materials_](https://www.nature.com/natrevmats)
 - [_Progress in Materials Science_](https://www.journals.elsevier.com/progress-in-materials-science)
 - [_Annual Review of Materials Research_](https://www.annualreviews.org/journal/matsci) - by invitation only
 - [_Materials Science and Engineering R: Reports_](https://www.journals.elsevier.com/materials-science-and-engineering-r-reports) - by invitation only
 - [_Current Opinion in Solid State & Materials Science_](https://www.journals.elsevier.com/current-opinion-in-solid-state-and-materials-science)
 - [_International Materials Reviews_](https://www.tandfonline.com/toc/yimr20/current)
+- [_Applied Mechanics Reviews_](https://asmedigitalcollection.asme.org/appliedmechanicsreviews)
 - [_Critical Reviews in Solid State and Materials Sciences_](https://www.tandfonline.com/toc/bsms20/current)
 - [_Archives of Computational Methods in Engineering_](https://www.springer.com/journal/11831)
 
