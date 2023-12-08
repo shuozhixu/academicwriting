@@ -31,7 +31,7 @@ Some journals publish full length articles only, some letters only, some both. I
 - [_Acat Materialia_](https://www.elsevier.com/journals/acta-materialia/1359-6454/guide-for-authors)
 - [_JMPS_](https://www.elsevier.com/journals/journal-of-the-mechanics-and-physics-of-solids/0022-5096/guide-for-authors)
 
-Once you select a journal, start writing. When I write a paper, I start with Introduction and end with Conclusion, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction, Conclusion, and Abstract. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is your choice. 
+Once you select a journal, start writing. When I write a paper, I start with Introduction and end with Conclusion, before finishing the Abstract. But some people write Methods, Results, Discussion first, followed by Introduction, Conclusion, and Abstract. Some other people prefer having an outline first and/or having the figures/tables ready before they start writing. It is up to you.
 
 ## Review article
 
@@ -70,11 +70,13 @@ First, avoid plagiarism, including the words that come from prior published work
 - [What is plagiarism?](http://studentconduct.sa.ucsb.edu/academic-integrity)
 - [Eight most common types of plagiarism](https://www.enago.com/academy/fraud-research-many-types-plagiarism)
 - [Elsevier Publication Ethics Q&A](https://www.elsevier.com/editors/perk/questions-and-answers)
+- [Georgia Tech Academic Honor Code](https://policylibrary.gatech.edu/student-life/academic-honor-code)
 - [UCSB Academic Integrity](http://studentconduct.sa.ucsb.edu/academic-integrity)
+- [OU Academic Integrity](https://www.ou.edu/integrity)
 
 Below I give a list of specific rules in writing the main text of an academic paper using LaTeX:
 
-- Use one, not two, space after a period, [unless you are typing on an actual typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [Microsoft Word changed their mind](https://www.theverge.com/2020/4/24/21234170/microsoft-word-two-spaces-period-error-correction-great-space-debate). In practice, there is no need to type an additional space, because [LaTeX treats multiple, consecutive spaces as if they were a single space](http://www.ctex.org/documents/latex/latex2e-html/ltx-143.html).
+- Use one, not two, space after a period, [unless you are typing on an actual typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [Microsoft Word has changed their mind](https://www.theverge.com/2020/4/24/21234170/microsoft-word-two-spaces-period-error-correction-great-space-debate). In practice, there is no need to type an additional space, because [LaTeX treats multiple, consecutive spaces as if they were a single space](http://www.ctex.org/documents/latex/latex2e-html/ltx-143.html).
 - Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables. For example,
 	- _x_ axis, _y_ axis, and _z_ axis 
 	- elastic anisotropic index for cubic crystals: _A_<sub>c</sub>. _A_ is italic but the subscript c is not because it stands for cubic
@@ -88,42 +90,48 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - Sometimes a period does not denote the end of a sentence. In this case, we need to use a backslash following the period, otherwise the space would be too wide, e.g.,
 	- `Ref.\ [34]`
 	- `Barack H.\ Obama II`
-	- `Fig.\ [2]`
+	- `Fig.\ 2`
+	- `Tab.\ 3`
 	- `Wang et al.\ [17]`
 	- `Grant No.\ 123456`
+- For figures and tables, an alternative way is
+	- `Fig.~2`
+	- `Tab.~3`
 - For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
-- Add a space between the number and the unit, e.g., `10 nm` instead of `10nm`.
+- Add a space between the number and the unit, e.g., `10 nm` or `10~nm` instead of `10nm`.
 - Use [the correct units](https://www.nist.gov/pml/weights-and-measures/metric-si/si-units), e.g., 100 kelvin is written as `100 K` instead of `100 k`.
 - To cite multiple references in the same place, use one `\cite`, e.g., write `\cite{king1963,obama2008}` instead of `\cite{king1963}\cite{obama2008}`. 
 - When using an acronym, spell out the entire phrase once and once only and only when the phrase is used for the first time. Common mistakes include
-	- write `molecular dynamics (MD)` on page 1, then write `molecular dynamics` on page 2
-	- write `molecular dynamics (MD)` on page 1, then write `molecular dynamics (MD)` again on page 2
-	- write `molecular dynamics` on page 1, then write `molecular dynamics (MD)` on page 2
-	- write `MD` throughout the paper, without spelling out `molecular dynamics` at all
+	- writing `molecular dynamics (MD)` on page 1, then writing `molecular dynamics` on page 2
+	- writing `molecular dynamics (MD)` on page 1, then writing `molecular dynamics (MD)` again on page 2
+	- writing `molecular dynamics` on page 1, then writing `molecular dynamics (MD)` on page 2
+	- writing `MD` throughout the paper, without spelling out `molecular dynamics` at all
 - For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
 - A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
-- If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., write `Fe` instead of `fe`.
+- If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., always write `Fe` instead of `fe` regardless of where is appears.
 - To create angular brackets in math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs. Note: `<` and `>` only works in math mode.
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
 - Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
 - There are two main citation styles: numeric and author-year:
 	- The author-year style will take care of the authors' names automatically, regardless of how many authors there are. But for the numerical style, you need to explicitly write the authors' names, if presenting the names is desirable. Use their last names only. Note that some last names have more than one word, e.g., de Koning, van Gogh, Van der Ven, Van de Walle, and D&#237;az de la Rubia. When there is one author, e.g., King, write `King [34] has a dream`. When there are two authors, e.g., Lewis and Clark, write `Lewis and Clark [44] returned to St. Louis on September 23, 1806`. When there are more than two authors, e.g., Weiss, Barish, and Thorne, write `Weiss et al. [54] won the 2017 Nobel Prize in Physics`.
-	- With the numberic style, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` becomes <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
+	- With the numberic style, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` may become <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
 	- With the author-year style, add the citation at the end of the sentence too, e.g., `I have a dream \citep{king1963}` which would render `I have a dream (King, 1963)`. Do not write `I have a dream \cite{king1963}` which would render `I have a dream King (1963)`. However, if the author name is at the beginning of a sentence, write `\cite{king1963} has a dream` which would render `King (1963) has a dream`. Do not write `\citep{king1963} has a dream` which would render `(King, 1963) has a dream`.
 
 ## Figures
 
-Every figure should be accompanied by a caption, which appears below the graphic.
+Every figure should be accompanied by a caption, which appears below the graphic. LaTeX provides [several options](https://www.overleaf.com/learn/latex/Inserting_Images) to handle figures.
 
-Say that you are writing a paper A for journal B and you want to use a figure that is modified or taken directly from a paper C in journal D. You should cite paper C and add a few words such as `Reproduced with permission from Ref. [C]`. Refer to the published work or instructions in journal B for the exact words. In addition, obtain permission from the copyright holder of that figure, which is mostly like the publisher of journal D, to reuse the figure. Here are [guidelines from Elsevier](https://www.elsevier.com/about/policies/copyright/permissions). Other publishers have their own guidelines.
+Say that you are writing a paper A for journal B and you want to use a figure that is modified or taken directly from a paper C in journal D. You should cite paper C and add a few words such as `Reproduced with permission from Ref. [C]`. Refer to the published work or instructions in journal B for the exact words. In addition, obtain permission from the copyright holder of that figure, which is most likely the publisher of journal D, to reuse the figure. Here are [guidelines from Elsevier](https://www.elsevier.com/about/policies/copyright/permissions). Other publishers have their own guidelines.
 
 There may be some scenarios in which you do not need to obtain permission. For example, the image or figure has been substantially modified. In this case, you still need to cite journal D. However, if you use a TEM or SEM image or photo, you need to obtain permission from the copyright holder even if you add in the caption that the image has been modified.
 
+Another common mistake is that the letters/numbers contained in figures are too small. The rule of thumb is that the letters/numbers in figures should have the same font size as those in the main text. If they are too small, you can either enlarge the figure or increase the font size when making the figure.
+
 ## Tables
 
-Like figures, every table should be accompanied by a caption too. But unlike figures, the caption appears above, not below, the tabulated content.
+Like figures, every table should be accompanied by a caption too. But unlike figures, the caption appears above, not below, the tabulated content. Check [this page](https://www.overleaf.com/learn/latex/Tables) for more on using tables in LaTeX.
 
 In most journals, vertical lines are not allowed in a table, neither are most horizontal lines. Again, refer to recent papers in the journal and/or its instruction.
 
@@ -136,15 +144,16 @@ The reference style differs greatly among journals. Read their instructions care
 
 which would require two files: `unsrt.bst` and `ref.bib`. Most likely the first file is provided by the journal. In practice, however, Overleaf can retrieve a lot of `.bst` files from its server, so you may only need to provide the file `ref.bib`.
 
-If you want to cite a paper, e.g., [this one](http://dx.doi.org/10.1016/j.actamat.2019.05.030), click on `Export`, then choose `Export citation to BibTeX`. Then you will get a `.bib` file. Open it, copy its content, and add it to your `ref.bib` file. Then in your main text, write `\cite{XU2019160}` to cite it. Do this for all other references to cite all of them.
+If you want to cite a paper, e.g., [this one](http://dx.doi.org/10.1016/j.actamat.2019.05.030), click on `Cite`, then choose `Export citation to BibTeX`. Then you will get a `.bib` file. Open it, copy its content, and add it to your `ref.bib` file. Then in your main text, write `\cite{XU2019160}` to cite it. Do this for all other references to cite all of them.
 
-Alternatively, use [reference management software](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software). I use [Zotero](https://en.wikipedia.org/wiki/Zotero). Go to [its website](https://www.zotero.org/download/) and install Zotero and Zotero Connector. When you read a paper in your browser and want to cite it, [use the Zotero Connector](https://www.zotero.org/support/adding_items_to_zotero) to add the bibliographic information to Zotero, which should be already open. Read [this page](https://www.zotero.org/support/quick_start_guide) for more on Zotero. Then, in Zotero, select entries you want to export, right-click on them, choose `Export Items`, change Format to `BibTeX`, select `Use Journal Abbreviation`, then click on `OK`. The entries will be exported to a local `.bib` file. Again, open it and copy & add its content to your `ref.bib` file.
+Alternatively, use [reference management software](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software). I use [Zotero](https://en.wikipedia.org/wiki/Zotero). Go to [its website](https://www.zotero.org/download/) and install Zotero and Zotero Connector. When you read a paper in your browser and want to cite it, [use the Zotero Connector](https://www.zotero.org/support/adding_items_to_zotero) to add the bibliographic information to Zotero, which should be already open. Read [this page](https://www.zotero.org/support/quick_start_guide) for more on Zotero. Then, in Zotero, select entries you want to export, right-click on them, choose `Export Items`, change Format to `BibTeX`, select `Use Journal Abbreviation`, then click on `OK`. The entries will be exported to a local `.bib` file. Open it, and copy & paste its content to your `ref.bib` file.
 
 Double check the reference list for typos as if it were the main text. Pay attention to these :
 
 - Write `$\left<110\right>$` and `\{110\}` instead of `<110>` and `{110}`.
-- Write `dislocations in Mo` and `dilute Mg-based alloys` instead of `dislocations in mo` and `dilute mg-based alloys`. Unfortunately, in the article title, most BibTeX style automatically converts all uppercase letters to lowercase ones, except the very first letter. To enforce the usage of uppercase letters, add curly brackets around certain words/letters in your `.bib` file, e.g., `dislocations in {Mo}` or `dislocations in {M}o`.
-- Use special character(s) in authors' names, if any.
+- Write `dislocations in Mo` and `dilute Mg-based alloys` instead of `dislocations in mo` and `dilute mg-based alloys`. Unfortunately, in the article title, most BibTeX styles automatically convert all uppercase letters to lowercase ones, except the very first letter. To enforce the usage of uppercase letters, add curly brackets around certain words/letters in your `.bib` file, e.g., `dislocations in {Mo}` or `dislocations in {M}o`.
+- Use [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in authors' names, if any.
+- Make sure that the greek letters appear correctly, e.g., `$\alpha$ iron` instead of `a iron`.
 - When necessary, use math mode, e.g., `($\bar{1}10$)` instead of `(-110)`.
 - In most cases, use abbreviated journal names, e.g., `Acta Mater.` instead of the full journal name, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.`  
 
