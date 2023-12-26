@@ -98,12 +98,13 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- `Fig.~2`
 	- `Tab.~3`
 - For [cross-references](https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats), it is recommended that you use [the hyperref package](https://ctan.org/pkg/hyperref?lang=en) and refer to a figure as `\autoref{fig1}`, a table as `\autoref{tab1}`, an equation as `\autoref{eq1}`, or a section as `\autoref{sec1}`, etc.
-- Refer to [this page](https://www.overleaf.com/learn/latex/Mathematical_expressions) for the math mode, including both inline (e.g., a single variable) and display (e.g., an equation) modes.
+- There are [two math modes](https://www.overleaf.com/learn/latex/Mathematical_expressions), including the inline (e.g., a single variable) and display (e.g., an equation) modes.
 	- When you use the in-line math mode, simply write `$C_{12}$` instead of `\textit{$C_{12}$}` or `\( C_{12} \)`.
 	- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
 	- A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
 	- To create angular brackets in the math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs.
 	- `<` and `>` only work in the math mode. For &ge;, &le;, and &ne;, use `$\ge$`, `$\le$`, and `$\ne$`, respectively.
+	- Write `$5\times 3\times 8$` instead of `5 x 3 x 8` or `5 X 3 X 8`.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
 - Add a space between the number and the unit, e.g., `10 nm` or `10~nm` instead of `10nm`.
@@ -114,7 +115,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- writing `molecular dynamics (MD)` on page 1, then writing `molecular dynamics (MD)` again on page 2
 	- writing `molecular dynamics` on page 1, then writing `molecular dynamics (MD)` on page 2
 	- writing `MD` throughout the paper, without spelling out `molecular dynamics` at all
-- For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
+- For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For example, to describe a plane in a coordinate system, write `the $xy$ plane` or `the $x$-$y$ plane` instead of `the $x-y$ plane`. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
 - If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., always write `Fe` instead of `fe` regardless of where is appears.
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
 - Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
