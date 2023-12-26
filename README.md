@@ -77,7 +77,7 @@ First, avoid plagiarism, including the words that come from prior published work
 Below I give a list of specific rules in writing the main text of an academic paper using LaTeX:
 
 - Use one, not two, space after a period, [unless you are typing on an actual typewritter](https://slate.com/technology/2011/01/two-spaces-after-a-period-why-you-should-never-ever-do-it.html) - even [Microsoft Word has changed their mind](https://www.theverge.com/2020/4/24/21234170/microsoft-word-two-spaces-period-error-correction-great-space-debate). In practice, there is no need to type an additional space, because [LaTeX treats multiple, consecutive spaces as if they were a single space](http://www.ctex.org/documents/latex/latex2e-html/ltx-143.html).
-- Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables. For example,
+- Italicize all variables, but not non-variables. Follow this rule everywhere, including figures and tables and their captions. For example,
 	- _x_ axis, _y_ axis, and _z_ axis 
 	- elastic anisotropic index for cubic crystals: _A_<sub>c</sub>. _A_ is italic but the subscript c is not because it stands for cubic
 	- however, if there is a vector _B_, which has three components and you use _a_, _b_, _c_ to denote each component, do italicize them, e.g., _B<sub>c</sub>_
@@ -97,7 +97,13 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - For figures and tables, an alternative way is
 	- `Fig.~2`
 	- `Tab.~3`
-- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
+- For [cross-references](https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats), it is recommended that you use [the hyperref package](https://ctan.org/pkg/hyperref?lang=en) and refer to a figure as `\autoref{fig1}`, a table as `\autoref{tab1}`, an equation as `\autoref{eq1}`, or a section as `\autoref{sec1}`, etc.
+- Refer to [this page](https://www.overleaf.com/learn/latex/Mathematical_expressions) for the math mode, including both inline (e.g., a single variable) and display (e.g., an equation) modes.
+	- When you use the in-line math mode, simply write `$C_{12}$` instead of `\textit{$C_{12}$}` or `\( C_{12} \)`.
+	- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
+	- A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
+	- To create angular brackets in the math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs.
+	- `<` and `>` only work in the math mode. For &ge;, &le;, and &ne;, use `$\ge$`, `$\le$`, and `$\ne$`, respectively.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
 - Add a space between the number and the unit, e.g., `10 nm` or `10~nm` instead of `10nm`.
@@ -109,17 +115,21 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- writing `molecular dynamics` on page 1, then writing `molecular dynamics (MD)` on page 2
 	- writing `MD` throughout the paper, without spelling out `molecular dynamics` at all
 - For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
-- A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
 - If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., always write `Fe` instead of `fe` regardless of where is appears.
-- To create angular brackets in math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs. Note: `<` and `>` only works in math mode.
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
-- There should be no space between numbers in the orientation, i.e., it should be `[1\bar{1}0]` and `\left<314\right>`, instead of `[1 \bar{1} 0]` and `\left<3 1 4\right>`.
 - Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
-- There are two main citation styles: numeric and author-year:
-	- The author-year style will take care of the authors' names automatically, regardless of how many authors there are. But for the numerical style, you need to explicitly write the authors' names, if presenting the names is desirable. Use their last names only. Note that some last names have more than one word, e.g., de Koning, van Gogh, Van der Ven, Van de Walle, and D&#237;az de la Rubia. When there is one author, e.g., King, write `King [34] has a dream`. When there are two authors, e.g., Lewis and Clark, write `Lewis and Clark [44] returned to St. Louis on September 23, 1806`. When there are more than two authors, e.g., Weiss, Barish, and Thorne, write `Weiss et al. [54] won the 2017 Nobel Prize in Physics`.
-	- With the numberic style, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` may become <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
-	- With the author-year style, add the citation at the end of the sentence too, e.g., `I have a dream \citep{king1963}` which would render `I have a dream (King, 1963)`. Do not write `I have a dream \cite{king1963}` which would render `I have a dream King (1963)`. However, if the author name is at the beginning of a sentence, write `\cite{king1963} has a dream` which would render `King (1963) has a dream`. Do not write `\citep{king1963} has a dream` which would render `(King, 1963) has a dream`.
+- There are two main citation styles: author-year and numeric.
+	- The author-year style will take care of the authors' names automatically, regardless of how many authors there are. If you want the names to appear at the end of a sentence, write `I have a dream \citep{king1963}` which would render `I have a dream (King, 1963)`. Do not write `I have a dream \cite{king1963}` which would render `I have a dream King (1963)`. However, if you want to names to appear at the beginning of a sentence, write `\cite{king1963} has a dream` which would render `King (1963) has a dream`. Do not write `\citep{king1963} has a dream` which would render `(King, 1963) has a dream`.
+	- With the numerical style, if presenting the names is desirable, you need to explicitly write the authors' names, and add the citation right after the names. Use their last names only. Note that some last names have more than one word, e.g., de Koning, van Gogh, Van der Ven, Van de Walle, and D&#237;az de la Rubia.
+		- When there is only one author, e.g., King, write `King [34] has a dream`.
+		- When there are two authors, e.g., Lewis and Clark, write `Lewis and Clark [44] returned to St. Louis on September 23, 1806`.
+		- When there are more than two authors, e.g., Weiss, Barish, and Thorne, write `Weiss et al. [54] won the 2017 Nobel Prize in Physics`.
+	- With the numberic style, if presenting the authors' names is not desirable, add the citation at the end of the sentence, e.g., `I have a dream \cite{king1963}.` which would render `I have a dream [34].` An exception is when the author name is at the beginning of a sentence, e.g., `King \cite{king1963} has a dream` which renders `King [34] has a dream`. Sometimes the citation is a superscript, e.g., `I have a dream \cite{king1963}` may become <code>I have a dream<sup>34</sup>.</code> In some cases, the superscript may be confused with the exponent, e.g., `2 \cite{obama2008}` would render <code>2<sup>35</sup></code>. In some other cases, the superscript is not desirable, e.g., `our results are compared against those in Ref.\ \cite{obama2008}` would render <code>our results are compared against thost in Ref.<sup>35</sup></code>. In these cases, write `2 [\citenum{obama2008}]` and `our results are compared against those in Ref.\ \citenum{obama2008}`, which would render `2 [35]` and `our results are compared against those in Ref. 35`, respectively.
 	- In either style, when you want to cite multiple references in the same place, write `\cite{obama2008,king1963}` instead of `\cite{obama2008}\cite{king1963}`.
+- When you mention a code/software (e.g., [LAMMPS](https://www.lammps.org/cite.html), [VASP](https://www.vasp.at/info/post/page/3), [MOOSE](https://mooseframework.inl.gov/citing.html), [Atomsk](https://atomsk.univ-lille.fr/citations.php), [OVITO](https://www.ovito.org/#cite-ovito), [Paraview](https://www.paraview.org/resources)), double check if you need to cite a reference or references.
+- Some field-specific comments:
+	- Please read [the wikipedia page on Miller index](https://en.wikipedia.org/wiki/Miller_index) to understand different notations.
+	- There should be no space between numbers in the notation, i.e., it should be `$[1\bar{1}0]$` and `$\left<314\right>$`, instead of `$[1 \bar{1} 0]$` and `$\left<3 1 4\right>$`.
 
 ## Figures
 
@@ -130,6 +140,8 @@ Say that you are writing a paper A for journal B and you want to use a figure th
 There may be some scenarios in which you do not need to obtain permission. For example, the image or figure has been substantially modified. In this case, you still need to cite journal D. However, if you use a TEM or SEM image or photo, you need to obtain permission from the copyright holder even if you add in the caption that the image has been modified.
 
 Another common mistake is that the letters/numbers contained in figures are too small. The rule of thumb is that the letters/numbers in figures should have the same font size as those in the main text. If they are too small, you can either enlarge the figure or increase the font size when making the figure.
+
+In addition, please try adjusting the legend's position so that it won't overlap with any curves or symbols.
 
 ## Tables
 
