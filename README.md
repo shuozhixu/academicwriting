@@ -98,7 +98,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 
 	However, if the period is followed by a comma or a semicolon, e.g., `Xu et al.;`, do not add the backslash or tilde.
 - For [cross-references](https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats), it is recommended that you use [the hyperref package](https://ctan.org/pkg/hyperref?lang=en). Then
-	- refer to a figure as `\autoref{fig1}` (instead of `Figure \ref{fig1}`), a table as `\autoref{tab1}` (instead of `Table \ref{tab1}`), an equation as `\autoref{eq1}` (instead of `Equation \ref{eq1}`), or a section as `\autoref{sec1}` (instead of `Section \ref{sec1}`), etc, where `fig1`, `tab1`, `eq1`, and `sec1` are labels that you created yourself. 
+	- refer to a figure as `\autoref{fig1}` instead of `Figure \ref{fig1}`, a table as `\autoref{tab1}` instead of `Table \ref{tab1}`, an equation as `\autoref{eq1}` instead of `Equation \ref{eq1}`, a section as `\autoref{sec1}` instead of `Section \ref{sec1}`, etc, where `fig1`, `tab1`, `eq1`, and `sec1` are labels that you created yourself. 
 	- refer to multiple figures as `Figures \ref{fig1} and \ref{fig2}` or `Figures \ref{fig1}--\ref{fig3}` or `Figures \ref{fig1}, \ref{3}, and \ref{5}`. The same goes for tables, equations, sections, etc. Note the plural form of the noun.
 - There are [two math modes](https://www.overleaf.com/learn/latex/Mathematical_expressions), including the inline (e.g., a single variable) and display (e.g., an equation) modes.
 	- When you use the in-line math mode, simply write `$C_{12}$` instead of `\textit{$C_{12}$}` or `\( C_{12} \)`.
