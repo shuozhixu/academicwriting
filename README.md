@@ -82,6 +82,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- elastic anisotropic index for cubic crystals: _A_<sub>c</sub>. _A_ is italic but the subscript c is not because it stands for cubic
 	- however, if there is a vector _B_, which has three components and you use _a_, _b_, _c_ to denote each component, do italicize them, e.g., _B<sub>c</sub>_
 	- do not italicize units, e.g., write `mJ/m$^2$` or `$\mathrm{mJ/m}^2$`, instead of `$mJ/m^2$`
+	- do not italicize chemical elements, e.g., write `Mo$_4$Nb$_3$Ta$_2$` which would yield Mo<sub>4</sub>Nb<sub>3</sub>Ta<sub>2</sub>, instead of `$Mo_4Nb_3Ta_2$` which would yield _Mo<sub>4</sub>Nb<sub>3</sub>Ta<sub>2</sub>_
 - When you want to italicize one or more words because you want to emphasize or quote something, use `\emph`, e.g., `\emph{I have a dream}` or `\emph{very} important`. Do not use the math mode. `$I have a dream$` would yield _Ihaveadream_.
 - [Always use the Oxford comma](https://www.businessinsider.com/always-use-the-oxford-comma-2015-5).
 - Be aware of [the lack of space after `\AA`](https://tex.stackexchange.com/questions/179625/in-text-mode-space-being-taken-away?noredirect=1&lq=1). A few tips:
@@ -94,6 +95,8 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- `Tab.\ 3`
 	- `Wang et al.\ [17]`
 	- `Grant No.\ 123456`
+
+	However, if the period is followed a comma or a semicolon, e.g., `Obama et al.;`, do not add the backslash.
 - For figures and tables, an alternative way is
 	- `Fig.~2`
 	- `Tab.~3`
@@ -116,7 +119,6 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- writing `molecular dynamics` on page 1, then writing `molecular dynamics (MD)` on page 2
 	- writing `MD` throughout the paper, without spelling out `molecular dynamics` at all
 - For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For example, to describe a plane in a coordinate system, write `the $xy$ plane` or `the $x$-$y$ plane` instead of `the $x-y$ plane`. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
-- If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., always write `Fe` instead of `fe` regardless of where is appears.
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
 - Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
 - There are two main citation styles: author-year and numeric.
@@ -131,6 +133,9 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - Some field-specific comments:
 	- Please read [the wikipedia page on Miller index](https://en.wikipedia.org/wiki/Miller_index) to understand different notations.
 	- There should be no space between numbers in the notation, i.e., it should be `$[1\bar{1}0]$` and `$\left<314\right>$`, instead of `$[1 \bar{1} 0]$` and `$\left<3 1 4\right>$`.
+	- If you use the full name of a chemical element, do not capitalize the first letter unless it is the first letter of a sentence, e.g., write `we study iron` instead of `we study Iron`. However, if you use the symbol of a chemical element, do capitalize the first letter, e.g., always write `Fe` instead of `fe` regardless of where it appears.
+	- For a compound, write the element's name alphabetically, e.g., write `MoNbTa` instead of `NbTaMo` or `TaMoNb`.
+	- For a non-stoichiometric compound, write the compositional ratios as subscripts, e.g., write `Mo$_4$Nb$_3$Ta$_2$` instead of `Mo4Nb3Ta2`.
 
 ## Figures
 
