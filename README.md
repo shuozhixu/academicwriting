@@ -103,11 +103,12 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - There are [two math modes](https://www.overleaf.com/learn/latex/Mathematical_expressions), including the inline (e.g., a single variable) and display (e.g., an equation) modes.
 	- When you use the in-line math mode, simply write `$C_{12}$` instead of `\textit{$C_{12}$}` or `\( C_{12} \)`.
 	- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
-	- A dash in math mode becomes the minus sign, e.g., `$-10$ degree Fahrenheit`. Do not write `-10 degree Fahrenheit`. Double check this in the main text and tables.
 	- To create angular brackets in the math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs.
 	- `<` and `>` only work in the math mode. For &ge;, &le;, and &ne;, use `$\ge$`, `$\le$`, and `$\ne$`, respectively.
 	- For multiplication, write `$5\times 3\times 8$` instead of `5 x 3 x 8` or `5 X 3 X 8`.
 	- In most cases, no need to place a number between two dollar signs, e.g., write `64` instead of `$64$`.
+	- A dash in math mode becomes the minus sign, e.g., write `$-10$ degree Fahrenheit` instead of `-10 degree Fahrenheit`. Double check this in the main text and tables.
+	- For an in-line equation, write `$\alpha = 10$` instead of `$\alpha$=10`.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
 - Add a space between the number and the unit, e.g., `10 nm` or `10~nm` instead of `10nm`.
