@@ -107,6 +107,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- To create angular brackets in the math mode, write `$\left<110\right>$` or `$\langle 110\rangle$` instead of `$<110>$` which renders less-than and greater-than signs.
 	- `<` and `>` only work in the math mode. For &ge;, &le;, and &ne;, use `$\ge$`, `$\le$`, and `$\ne$`, respectively.
 	- For multiplication, write `$5\times 3\times 8$` instead of `5 x 3 x 8` or `5 X 3 X 8`.
+	- In most cases, no need to place a number between two dollar signs, e.g., write `64` instead of `$64$`.
 - Add a space before the left bracket or the left parenthesis, e.g., `molecular dynamics (MD)` instead of `molecular dynamics(MD)`.
 - Add a space before citing a reference, e.g., `I have a dream \cite{king1963}` instead of `I have a dream\cite{king1963}`.
 - Add a space between the number and the unit, e.g., `10 nm` or `10~nm` instead of `10nm`.
