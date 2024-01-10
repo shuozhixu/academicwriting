@@ -180,3 +180,6 @@ Double check the reference list for typos as if it were the main text. Pay atten
 - In most cases, use abbreviated journal names, e.g., `Acta Mater.` instead of the full journal name, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.`
 - Make sure that any journal article has volume number, page number (or article number), and year. A common mistake made by Zotero (not by you! but it is your job to correc it) is that it collects the page number (starting from 1) when it should collect the article number. For example, the Zotero Connector would take the page number of [this paper](https://doi.org/10.1038/npjcompumats.2015.16) as `1-9` while it only has an article number `15016`.
 
+# Response to reviewers
+
+A sample response to reviewer letter, which was used for [one of my papers](http://dx.doi.org/10.1016/j.jallcom.2023.170556), can be found in this GitHub repository.
