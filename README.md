@@ -120,6 +120,7 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- writing `molecular dynamics` on page 1, then writing `molecular dynamics (MD)` on page 2
 	- writing `MD` throughout the paper, without spelling out `molecular dynamics` at all
 - For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For example, to describe a plane in a coordinate system, write `the $xy$ plane` or `the $x$-$y$ plane` instead of `the $x-y$ plane`. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
+- For quotation marks, please refer to [this page](https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/QuotDash.html).
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
 - Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
 - There are two main citation styles: author-year and numeric.
