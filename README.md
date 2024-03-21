@@ -149,7 +149,9 @@ There may be some scenarios in which you do not need to obtain permission. For e
 
 Another common mistake is that the letters/numbers contained in figures are too small. The rule of thumb is that the letters/numbers in figures should have the same font size as those in the main text. If they are too small, you can either enlarge the figure or increase the font size when making the figure.
 
-In addition, please try adjusting the legend's position so that it won't overlap with any curves or symbols.
+In addition, adjust the legend's position so that it won't overlap with any curves or symbols.
+
+Last but not least, use [scientifically derived colour maps](https://doi.org/10.1038/s41467-020-19160-7), as appropriate.
 
 ## Tables
 
