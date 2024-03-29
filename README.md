@@ -182,6 +182,7 @@ Double check the reference list for typos as if it were the main text. Pay atten
 - When necessary, use math mode, e.g., `($\bar{1}10$)` instead of `(-110)`.
 - In most cases, use abbreviated journal names, e.g., `Acta Mater.` instead of the full journal name, i.e., `Acta Materialia`.  Check [this webpage](https://woodward.library.ubc.ca/research-help/journal-abbreviations/) for the correct abbreviated journal names. Omit all articles (a, an, the) and prepositions (e.g., at, in, of, for, with). Also capitalize the first letter of each word. For example, write `J. Chem. Phys.`, instead of `The J. of Chem. Phys.` or `J. chem. phys.` If you do want to use the full names, be sure to write `Acta Materialia` and `The Journal of Chemical Physics` instead of `Acta materialia` and `The journal of chemical physics`.
 - Make sure that any journal article has volume number, page number (or article number), and year. A common mistake made by Zotero (not by you! but it is your job to correc it) is that it collects the page number (starting from 1) when it should collect the article number. For example, the Zotero Connector would take the page number of [this paper](https://doi.org/10.1038/npjcompumats.2015.16) as `1-9` while it only has an article number `15016`. The rule of thumb is to double check any page number range that starts from 1.
+- If you want to cite a paper that is in an open-access repository of e-prints such as [arXiv](https://arxiv.org) or [bioRxiv](https://www.biorxiv.org), check if it has already been published in a peer-reviewed journal or conference proceeding. If yes, cite the peer-reviewed version.
 
 # Response to reviewers
 
@@ -191,5 +192,4 @@ A sample response to reviewer letter, which was used for [one of my papers](http
 - Respond to the (associate) editor's comments too, if any.
 - Refer to your submission as `manuscript` instead of `paper` because it is not a paper yet.
 - Highlight the changes made in both manuscript and response letter. In the response letter, describe the page number (and line number if applicable) or the section name/number where the changes are made.
-- 
 - Try to incorporate what is presented in the response letter into the manuscript. For example, if you prepared a new figure for the reviewer, include it in the manuscript as well. If you don't want to do that, explain the reason.
