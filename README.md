@@ -143,6 +143,8 @@ Below I give a list of specific rules in writing the main text of an academic pa
 
 Every figure should be accompanied by a caption, which appears below the graphic. LaTeX provides [several options](https://www.overleaf.com/learn/latex/Inserting_Images) to handle figures.
 
+When submitting figures to a journal, please rename them as `Fig-1.jpg`, `Fig-2a.jpg`, `Fig-2b.jpg`, etc. Note that the extension `jpg` is just an example; accepted figure file types vary between journals.
+
 Say that you are writing a paper A for journal B and you want to use a figure that is modified or taken directly from a paper C in journal D. You should cite paper C and add a few words such as `Reproduced with permission from Ref. [C]`. Refer to the published work or instructions in journal B for the exact words. In addition, obtain permission from the copyright holder of that figure, which is most likely the publisher of journal D, to reuse the figure. Here are [guidelines from Elsevier](https://www.elsevier.com/about/policies/copyright/permissions). Other publishers have their own guidelines.
 
 There may be some scenarios in which you do not need to obtain permission. For example, the image or figure has been substantially modified. In this case, you still need to cite journal D. However, if you use a TEM or SEM image or photo, you need to obtain permission from the copyright holder even if you add in the caption that the image has been modified.
