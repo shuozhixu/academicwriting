@@ -97,9 +97,10 @@ Below I give a list of specific rules in writing the main text of an academic pa
 	- `Grant No.\ 123456` or `Grant No.~123456`
 
 	However, if the period is followed by a comma or a semicolon, e.g., `Xu et al.;`, do not add the backslash or tilde.
-- For [cross-references](https://www.overleaf.com/learn/latex/Cross_referencing_sections%2C_equations_and_floats), it is recommended that you use [the hyperref package](https://ctan.org/pkg/hyperref?lang=en). Then
+- Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can. It is recommended that you use [the hyperref package](https://ctan.org/pkg/hyperref?lang=en). Then
 	- refer to a figure as `\autoref{fig1}` instead of `Figure \ref{fig1}`, a table as `\autoref{tab1}` instead of `Table \ref{tab1}`, an equation as `\autoref{eq1}` instead of `Equation \ref{eq1}`, a section as `\autoref{sec1}` instead of `Section \ref{sec1}`, etc, where `fig1`, `tab1`, `eq1`, and `sec1` are labels that you created yourself. 
 	- refer to multiple figures as `Figures \ref{fig1} and \ref{fig2}` or `Figures \ref{fig1}--\ref{fig3}` or `Figures \ref{fig1}, \ref{3}, and \ref{5}`. The same goes for tables, equations, sections, etc. Note the plural form of the noun.
+	- Do not add "the" before "Figure 1" or "Table 2"
 - There are [two math modes](https://www.overleaf.com/learn/latex/Mathematical_expressions), including the inline (e.g., a single variable) and display (e.g., an equation) modes.
 	- When you use the in-line math mode, simply write `$C_{12}$` instead of `\textit{$C_{12}$}` or `\( C_{12} \)`.
 	- For a short line over a number, use `\bar`, instead of `\overline`, e.g., `\bar{1}\bar{1}0`. `\overline` is too wide, especially when two are used sequentially.
@@ -122,7 +123,6 @@ Below I give a list of specific rules in writing the main text of an academic pa
 - For [dash](https://en.wikipedia.org/wiki/Dash) in text mode, use `-` for an ordinary hyphen, `--` for an en dash, and `---` for an em dash. For example, to describe a plane in a coordinate system, write `the $xy$ plane` or `the $x$-$y$ plane` instead of `the $x-y$ plane`. For more on the dashes, read [this page](https://getitwriteonline.com/articles/en-dashes-em-dashes).
 - For quotation marks, please refer to [this page](https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/QuotDash.html).
 - Pay attention to [special character(s)](https://en.wikibooks.org/wiki/LaTeX/Special_Characters) in people's names, e.g., `Schr\"{o}dinger` instead of `Schrodinger`.
-- Use [cross-referencing](https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing) whenever you can.
 - There are two main citation styles: author-year and numeric.
 	- The author-year style will take care of the authors' names automatically, regardless of how many authors there are. If you want the names to appear at the end of a sentence, write `I have a dream \citep{king1963}` which would render `I have a dream (King, 1963)`. Do not write `I have a dream \cite{king1963}` which would render `I have a dream King (1963)`. However, if you want to names to appear at the beginning of a sentence, write `\cite{king1963} has a dream` which would render `King (1963) has a dream`. Do not write `\citep{king1963} has a dream` which would render `(King, 1963) has a dream`.
 	- With the numerical style, if presenting the names is desirable, you need to explicitly write the authors' names, and add the citation right after the names. Use their last names only. Note that some last names have more than one word, e.g., de Koning, van Gogh, Van der Ven, Van de Walle, and D&#237;az de la Rubia.
