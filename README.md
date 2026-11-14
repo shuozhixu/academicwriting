@@ -1,4 +1,26 @@
-# Introduction
+# Update
+
+[November 2026]
+
+I started this page in August 2020. Since then, a lot of things have changed, epsecially after the emergence of generative AI (GenAI) technologies, such as [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com/app), [Claude](https://claude.ai), and [Copilot](https://copilot.cloud.microsoft/chat). Use of GenAI is generally permitted by publishers, e.g., [Elsevier](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals), [Taylor & Francis](https://taylorandfrancis.com/our-policies/ai-policy), [Wiley](https://www.wiley.com/en-us/terms-of-use/ai-principles), [Springer Nature](https://group.springernature.com/gp/group/ai/our-ai-approach-and-principles), and [Science](https://www.science.org/content/page/science-journals-editorial-policies). Many of these publishers require that the use of such tools be explicitly disclosed in the paper. Regardless, authors remain fully accountable for the final version of the text. GenAI is known to sometimes produce false or fabricated information, a phenomenon commonly referred to as [hallucination](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)).
+
+I am an avid supporter of GenAI and a frequent user of ChatGPT, Claude, and Copilot. I advocate for leveraging GenAI to assist humans in their work. For example, I encourage all students in my research group to use it as a tool to assist with their writing and coding.
+
+However, I have recently encountered cases where students provide only a few keywords or sentences and rely on a GenAI tool to expand them into full paragraphs. This approach is generally inadvisable, especially for academic writing, for which most GenAI tools are not optimally trained. It is crucial to carefully review the output to ensure it makes sense and aligns with the intended purpose.
+
+Here is my approach:
+
+- I always begin with my own writing by jotting down ideas sentence by sentence. For example, the first sentence might explain why metals are important, the second might address why developing metals for extreme environments is desirable, and the third could focus on the specific extreme environment being discussed. This method ensures that the text and logic follow my intended flow, as I have found that some GenAI tools can produce content that lacks logical structure or at least does not align with my own thought process. Once I have a draft, I ask GenAI to correct grammatical errors and improve the overall flow. I also sometimes ask GenAI to generate supplementary content. For instance, if I write, “Metals may soften in extreme environments such as xx,” I might ask GenAI to replace “xx” with appropriate phrases and provide relevant references.
+- Sometimes, instead of asking GenAI to help write a paper sentence by sentence, I ask it to draft one paragraph at a time. Then I rearrange sentences to ensure that the logic is aligned with my own. Once I am happy with the first paragraph, I move on to the next. I also ask GenAI to make sure adjacent paragraphs transition smoothly. I recognize that GenAI tools are improving rapidly. However, as of now, I have not found a tool that can write an entire Introduction section to my satisfaction. It’s much like coding: break a large task into smaller pieces, ask GenAI to work on one piece at a time, and verify each piece before proceeding.
+- Once I have a complete section or manuscript, I ask GenAI to review it. I use a different tool for this step --- for example, I might draft with Claude and then ask Copilot to proofread it. That is because [Nadra and Purdy](https://doi.org/10.1016/j.compcom.2026.102993) found that GenAI tools vary in the errors they detect in academic writing.
+
+Whether to use GenAI is an author’s choice, but the author remains accountable for the final manuscript. Keep in mind that academic papers are read by human beings, at least for now. A paper therefore needs to be concise and clear, regardless of who wrote it. GenAI can weaken academic writing in three common ways
+
+- producing hollow prose that lacks substance
+- repeating the same ideas
+- using different terms to refer to the same concept.
+
+# Foreword
 
 Writing a paper for a peer-reviewed scientific journal is not easy. Here, I share some of my experiences in writing one. A list of my publications can be found on [my Google Scholar page](https://scholar.google.com/citations?user=LhG5xZ4AAAAJ&hl=en).
 
@@ -186,14 +208,6 @@ Double check the reference list for typos as if it were the main text. Pay atten
 - Make sure that any journal article has volume number, page number (or article number), and year. A common mistake made by Zotero (not by you! but it is your job to correc it) is that it collects the page number (starting from 1) when it should collect the article number. For example, the Zotero Connector would take the page number of [this paper](https://doi.org/10.1038/npjcompumats.2015.16) as `1-9` while it only has an article number `15016`. The rule of thumb is to double check any page number range that starts from 1.
 - If you want to cite a paper that is in an open-access repository of e-prints such as [arXiv](https://arxiv.org), [ChemRxiv](https://chemrxiv.org), [bioRxiv](https://www.biorxiv.org), [engrXiv](https://engrxiv.org), [SSRN](https://www.ssrn.com/index.cfm/en), or [Preprints.org](https://www.preprints.org), please check if it has already been published in a peer-reviewed journal or conference proceeding. If yes, cite the peer-reviewed version.
 - Sometimes two BibTex entries with different citation keys may point to the same reference. This usually happens when two entries were obtained in different ways, e.g., one directly from the journal website, another from Zotero. Check all references in your `.bib` file to remove duplicates. A good practice to use only one method, e.g., Zotero, to manage all references.
-
-## On generative AI
-
-Generative AI technologies, such as [ChatGPT](https://chatgpt.com) and [Gemini](https://gemini.google.com/app), are generally permitted by publishers, e.g., [Elsevier](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals), [Taylor & Francis](https://taylorandfrancis.com/our-policies/ai-policy), [Wiley](https://www.wiley.com/en-us/terms-of-use/ai-principles), [Springer Nature](https://group.springernature.com/gp/group/ai/ai-principles), [Science](https://www.science.org/content/page/science-journals-editorial-policies). Many of these publishers require that the use of such tools be explicitly disclosed in the paper. Regardless, authors remain fully accountable for the final version of the text.
-
-I am an avid supporter of generative AI and a frequent user of ChatGPT. I advocate for leveraging AI to assist humans in their work. For example, I encourage all students in my research group to use ChatGPT as a tool to assist with their writing. However, I have recently encountered cases where authors provide only a few keywords or sentences and rely on ChatGPT to expand them into full paragraphs. This approach is generally inadvisable, especially for academic writing, for which ChatGPT is not optimally trained. It is crucial to carefully review the output to ensure it makes sense and aligns with the intended purpose.
-
-Here is my approach: I always begin with my own writing by jotting down ideas sentence by sentence. For example, the first sentence might explain why metals are important, the second might address why developing metals for extreme environments is desirable, and the third could focus on the specific extreme environment being discussed. This method ensures that the text and logic follow my intended flow, as I have found that ChatGPT occasionally produces content that lacks logical structure or at least does not align with my own thought process. Once I have a draft, I use ChatGPT to correct grammatical errors and improve the overall flow. I also sometimes ask ChatGPT for supplementary content. For instance, if I write, “Metals may soften in extreme environments such as xx,” I might ask ChatGPT to replace “xx” with appropriate phrases and provide relevant references. However, I always verify the accuracy of what ChatGPT generates, as it can sometimes produce false or fabricated information, a phenomenon commonly referred to as [hallucination](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)).
 
 # Response to reviewers
 
