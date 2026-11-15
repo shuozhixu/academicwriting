@@ -14,11 +14,20 @@ Here is my approach:
 - Sometimes, instead of asking GenAI to help write a paper sentence by sentence, I ask it to draft one paragraph at a time. Then I rearrange sentences to ensure that the logic is aligned with my own. Once I am happy with the first paragraph, I move on to the next. I also ask GenAI to make sure adjacent paragraphs transition smoothly. I recognize that GenAI tools are improving rapidly. However, as of now, I have not found a tool that can write an entire Introduction section to my satisfaction. It’s much like coding: break a large task into smaller pieces, ask GenAI to work on one piece at a time, and verify each piece before proceeding.
 - Once I have a complete section or manuscript, I ask GenAI to review it. I use a different tool for this step --- for example, I might draft with Claude and then ask Copilot to proofread it. That is because [Nadra and Purdy](https://doi.org/10.1016/j.compcom.2026.102993) found that GenAI tools vary in the errors they detect in academic writing.
 
-Whether to use GenAI is an author’s choice, but the author remains accountable for the final manuscript. Keep in mind that academic papers are read by human beings, at least for now. A paper therefore needs to be concise and clear, regardless of who wrote it. GenAI can weaken academic writing in three common ways
+Whether to use GenAI is an author’s choice, but the author remains accountable for the final manuscript. Keep in mind that academic papers are read by human beings, at least for now. A paper therefore needs to be concise and clear, regardless of who wrote it. GenAI can weaken academic writing in four common ways:
 
-- producing hollow prose that lacks substance
-- repeating the same ideas
-- using different terms to refer to the same concept.
+- hollow text that lacks substance. Two examples:
+	- "Alloys are important to the aerospace, aeronautical, astronautics, aviation, and space-exploration industries." This could be shortened to "Alloys are important to the aerospace industry," and still would not explain which alloys are used or why they are important.
+	- "To investigate dislocation behavior, we conducted molecular dynamics (MD) simulations using an MD simulation approach." This could simply be "We used molecular dynamics (MD) simulations to study dislocation behavior."
+- the same thing is repeated. Two examples:
+	- "Dislocation glide produces plastic strain, meaning that plastic deformation occurs through dislocation motion." The second half of this sentence is not needed
+	- "When _x_ increases, _y_ decreases, indicating a negative correlation between these two parameters." Again, the last part of this sentence can be omitted.
+- different terms are used to refer to the same concept. Two examples:
+	- Use the term "grain boundary" in the first few paragraphs, and then, out of nowhere, write "this 2D thin interface in-between grains" as if this is not a grain boundary
+	- Describe and compare two standard synthesis methods throughout the paper, then refer to them later as "our benchmark routes" without explaining what makes them benchmarks.
+- the paper is fragmented. One example
+	- When discussing alloy A, write "This suggests that the dominant deformation mechanism in alloy A is dislocation slip". Then several paragraphs later, when discussing alloy B, write "This indicates that dislocation slip is the main deformation carrier in alloy B" without even referring to alloy A
+
 
 # Foreword
 
