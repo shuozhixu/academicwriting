@@ -25,7 +25,7 @@ Whether to use GenAI is an author’s choice, but the author remains accountable
 - different terms are used to refer to the same concept. Two examples:
 	- Use the term "grain boundary" in the first few paragraphs, and then, out of nowhere, write "this 2D thin interface in-between grains" as if this is not a grain boundary
 	- Describe and compare two standard synthesis methods throughout the paper, then refer to them later as "our benchmark routes" without explaining what makes them benchmarks.
-- the paper is fragmented. One example
+- the paper is fragmented. One example:
 	- When discussing alloy A, write "This suggests that the dominant deformation mechanism in alloy A is dislocation slip". Then several paragraphs later, when discussing alloy B, write "This indicates that dislocation slip is the main deformation carrier in alloy B" without even referring to alloy A
 
 
